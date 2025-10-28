@@ -6,4 +6,4 @@ v3= sys.argv[3]
 print("Os dados do utilizador são:")
 print("O servidor é:", v1)
 print("O utilizador é:", v2)
-print("A palavra passe é:", v3)
+print(f"A palavra passe é: {v3} ou #####")
