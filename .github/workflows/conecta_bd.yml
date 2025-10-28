@@ -5,21 +5,18 @@ name: Script para pedir o servidor, utilizado e password
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-    servidor: 
-      required: true
+    inputs:
+      servidor: 
+        required: true
 
-    utilizador: 
-      required: true
+      utilizador: 
+        required: true
 
-    password: 
-      required: true
+      password: 
+        required: true
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
